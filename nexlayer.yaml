@@ -2,7 +2,7 @@ application:
   name: ollama
   pods:
   - name: app
-    image: ollama/ollama:latest
+    image: mirror.gcr.io/ollama/ollama:latest
     path: /
     servicePorts:
     - 11434
