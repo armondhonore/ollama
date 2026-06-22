@@ -1,0 +1,12 @@
+application:
+  name: ollama
+  pods:
+  - name: app
+    image: ollama/ollama:latest
+    path: /
+    servicePorts:
+    - 11434
+    volumes:
+    - name: ollama-models
+      mountPath: /root/.ollama
+      size: 20Gi
